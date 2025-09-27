@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Barebones Website</title>
+  <meta name="description" content="A website designed to be a testing playground for the developer">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">Barebones Website</h1>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Simple, accessible, and fast</h2>
+        <p>Use this starter to build a small static site. Includes a theme toggle and smooth scrolling.</p>
+        <p><a class="btn" href="#features">See features</a></p>
+      </div>
+    </section>
+
+    <section id="features" class="container section">
+      <h3>Features</h3>
+      <ul>
+        <li>Responsive layout</li>
+        <li>Accessible navigation</li>
+        <li>Small vanilla JS for interactivity</li>
+      </ul>
+    </section>
+
+    <section id="about" class="container section">
+      <h3>About</h3>
+      <p>This is intentionally minimal — remove or expand as you like.</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a short message..."></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> AerolianSolis </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
